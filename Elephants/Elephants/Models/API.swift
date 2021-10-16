@@ -12,6 +12,7 @@ struct API {
     
     let baseURL = "https://elephant-api.herokuapp.com"
     
+    /// returns the string URL to Elephants endpoint
     func getElephantsURL() -> String {
         return "\(baseURL)/\(EndPoints.elephants)"
     }
