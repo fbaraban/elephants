@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Elephant model
 struct Elephant {
     var _id: String?
     var index: Int?

@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Elephants model
 struct Elephants {
     var elephants : [Elephant]
 }

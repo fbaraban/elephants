@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// API model
 struct API {
     
     let baseURL = "https://elephant-api.herokuapp.com"
