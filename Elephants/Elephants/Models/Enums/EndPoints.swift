@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Describe the API endpoints: elephants
 enum EndPoints {
     case elephants
 }

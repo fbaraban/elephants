@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// HTTP methods supported: GET
 enum HTTPMethods {
     case GET
 }
