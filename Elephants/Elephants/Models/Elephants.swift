@@ -9,5 +9,5 @@ import Foundation
 
 /// Elephants model
 struct Elephants: Codable {
-    var elephants : [Elephant]
+    var elephants: [Elephant]
 }
