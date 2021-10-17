@@ -8,7 +8,7 @@
 import Foundation
 
 /// Describe Elephant sex: male, female or none
-enum Sex {
+public enum Sex {
     case male
     case female
     case none

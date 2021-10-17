@@ -8,27 +8,28 @@
 import Foundation
 
 /// Elephant model
-struct Elephant {
+struct Elephant: Codable {
     var _id: String?
     var index: Int?
     var name: String?
     var affiliation: String?
     var species: String?
-    var sex: Sex
-    var fictional: Bool?
-    var dob: Int?
+    var sex: String?
+    var fictional: String?
+    var dob: String?
     var wikilink: String?
     var image: String?
     var note: String?
+    
     
     init(_id: String? = nil,
          index: Int? = nil,
          name: String? = nil,
          affiliation: String? = nil,
          species: String? = nil,
-         sex: Sex = .none,
-         fictional: Bool? = nil,
-         dob: Int? = nil,
+         sex: String? = nil,
+         fictional: String? = nil,
+         dob: String? = nil,
          wikilink: String? = nil,
          image: String? = nil,
          note: String? = nil) {
@@ -46,7 +47,7 @@ struct Elephant {
         self.note = note
     }
     
-    public enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case _id = "id"
         case index
         case name

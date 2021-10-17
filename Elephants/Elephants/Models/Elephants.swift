@@ -8,6 +8,6 @@
 import Foundation
 
 /// Elephants model
-struct Elephants {
+struct Elephants: Codable {
     var elephants : [Elephant]
 }
