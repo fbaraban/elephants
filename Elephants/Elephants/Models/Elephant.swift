@@ -9,7 +9,7 @@ import Foundation
 
 /// Elephant model
 struct Elephant: Codable {
-    var _id: String?
+    var identifier: String?
     var index: Int?
     var name: String?
     var affiliation: String?
@@ -20,9 +20,8 @@ struct Elephant: Codable {
     var wikilink: String?
     var image: String?
     var note: String?
-    
-    
-    init(_id: String? = nil,
+
+    init(identifier: String? = nil,
          index: Int? = nil,
          name: String? = nil,
          affiliation: String? = nil,
@@ -33,8 +32,8 @@ struct Elephant: Codable {
          wikilink: String? = nil,
          image: String? = nil,
          note: String? = nil) {
-        
-        self._id = _id
+
+        self.identifier = identifier
         self.index = index
         self.name = name
         self.affiliation = affiliation
@@ -46,9 +45,9 @@ struct Elephant: Codable {
         self.image = image
         self.note = note
     }
-    
+
     enum CodingKeys: String, CodingKey {
-        case _id = "id"
+        case identifier = "_id"
         case index
         case name
         case affiliation
