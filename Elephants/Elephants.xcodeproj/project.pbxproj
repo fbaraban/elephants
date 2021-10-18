@@ -11,7 +11,7 @@
 		C76B421A271AA17C00E5FBDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B4219271AA17C00E5FBDB /* ViewController.swift */; };
 		C76B421F271AA17D00E5FBDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76B421E271AA17D00E5FBDB /* Assets.xcassets */; };
 		C76B422A271AA3F400E5FBDB /* Elephants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B4229271AA3F400E5FBDB /* Elephants.swift */; };
-		C76B422D271AA70A00E5FBDB /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B422C271AA70A00E5FBDB /* Gender.swift */; };
+		C76B422D271AA70A00E5FBDB /* Sex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B422C271AA70A00E5FBDB /* Sex.swift */; };
 		C76B422F271AA72100E5FBDB /* Elephant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B422E271AA72100E5FBDB /* Elephant.swift */; };
 		C76B4231271AA76400E5FBDB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B4230271AA76400E5FBDB /* API.swift */; };
 		C76B4233271AA7C900E5FBDB /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B4232271AA7C900E5FBDB /* EndPoints.swift */; };
@@ -25,7 +25,7 @@
 		C76B421E271AA17D00E5FBDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C76B4223271AA17D00E5FBDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C76B4229271AA3F400E5FBDB /* Elephants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elephants.swift; sourceTree = "<group>"; };
-		C76B422C271AA70A00E5FBDB /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		C76B422C271AA70A00E5FBDB /* Sex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sex.swift; sourceTree = "<group>"; };
 		C76B422E271AA72100E5FBDB /* Elephant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elephant.swift; sourceTree = "<group>"; };
 		C76B4230271AA76400E5FBDB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C76B4232271AA7C900E5FBDB /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		C76B4234271AA7FF00E5FBDB /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				C76B422C271AA70A00E5FBDB /* Gender.swift */,
+				C76B422C271AA70A00E5FBDB /* Sex.swift */,
 				C76B4232271AA7C900E5FBDB /* EndPoints.swift */,
 				C76B4235271AA82900E5FBDB /* HTTPMethods.swift */,
 			);
@@ -163,7 +163,7 @@
 			files = (
 				C76B4236271AA82900E5FBDB /* HTTPMethods.swift in Sources */,
 				C76B422F271AA72100E5FBDB /* Elephant.swift in Sources */,
-				C76B422D271AA70A00E5FBDB /* Gender.swift in Sources */,
+				C76B422D271AA70A00E5FBDB /* Sex.swift in Sources */,
 				C76B421A271AA17C00E5FBDB /* ViewController.swift in Sources */,
 				C76B4233271AA7C900E5FBDB /* EndPoints.swift in Sources */,
 				C76B422A271AA3F400E5FBDB /* Elephants.swift in Sources */,

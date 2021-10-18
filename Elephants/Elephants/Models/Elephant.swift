@@ -14,7 +14,7 @@ struct Elephant: Codable {
     var name: String?
     var affiliation: String?
     var species: String?
-    var gender: String?
+    var sex: String?
     var fictional: String?
     var dob: String?
     var wikilink: String?
@@ -26,7 +26,7 @@ struct Elephant: Codable {
          name: String? = nil,
          affiliation: String? = nil,
          species: String? = nil,
-         gender: String? = nil,
+         sex: String? = nil,
          fictional: String? = nil,
          dob: String? = nil,
          wikilink: String? = nil,
@@ -38,7 +38,7 @@ struct Elephant: Codable {
         self.name = name
         self.affiliation = affiliation
         self.species = species
-        self.gender = gender
+        self.sex = sex
         self.fictional = fictional
         self.dob = dob
         self.wikilink = wikilink
@@ -52,7 +52,7 @@ struct Elephant: Codable {
         case name
         case affiliation
         case species
-        case gender
+        case sex
         case fictional
         case dob
         case wikilink
