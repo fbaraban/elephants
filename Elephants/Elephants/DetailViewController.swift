@@ -7,17 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DetailViewController: UIViewController {
     
-    let api = API()
-    var elephants : [Elephant] = []
-    var error = ""
+    var elephant : Elephant = Elephant()
 
     lazy var uitv_TableView : UITableView = {
        
         let tableView = UITableView(frame: self.view.bounds)
         tableView.dataSource = self
-        tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         return tableView
     }()
@@ -27,30 +24,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.view.addSubview(self.uitv_TableView)
-        
-        api.getElephants(urlString: api.setElephantsURL(), method: .GET) { elephants in
-            self.elephants = elephants
-            DispatchQueue.main.async {
-                self.uitv_TableView.reloadData()
-            }
-            print("ELEPHANTS: \(self.elephants.count)")
-        } errorReturned: { error in
-            self.error = error
-        }
 
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension DetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.elephants.count
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let elephant = self.elephants[indexPath.row]
         if let imageURL = elephant.image {
             if let url = URL(string: imageURL) {
                 if let data = try? Data(contentsOf: url) {
@@ -72,17 +58,6 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
-    
 }
 
-extension ViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let dvc = DetailViewController()
-        dvc.elephant = self.elephants[indexPath.row]
-        dvc.title = dvc.elephant.name
-        self.show(dvc, sender: nil)
-    }
-    
-}
 
