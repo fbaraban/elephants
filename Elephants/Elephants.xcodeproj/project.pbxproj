@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7197B292721F39D00980E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7197B282721F39D00980E7A /* LaunchScreen.storyboard */; };
 		C76B4216271AA17C00E5FBDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B4215271AA17C00E5FBDB /* AppDelegate.swift */; };
 		C76B421A271AA17C00E5FBDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B4219271AA17C00E5FBDB /* ViewController.swift */; };
 		C76B421F271AA17D00E5FBDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76B421E271AA17D00E5FBDB /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7197B282721F39D00980E7A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Elephants/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		C76B4212271AA17C00E5FBDB /* Elephants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elephants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76B4215271AA17C00E5FBDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76B4219271AA17C00E5FBDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				C76B422C271AA70A00E5FBDB /* Sex.swift */,
 				C76B4232271AA7C900E5FBDB /* EndPoints.swift */,
 				C76B4235271AA82900E5FBDB /* HTTPMethods.swift */,
+				C7197B282721F39D00980E7A /* LaunchScreen.storyboard */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76B421F271AA17D00E5FBDB /* Assets.xcassets in Resources */,
+				C7197B292721F39D00980E7A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Elephants/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,6 +333,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Elephants/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
