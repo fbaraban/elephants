@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C7197B292721F39D00980E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7197B282721F39D00980E7A /* LaunchScreen.storyboard */; };
+		C7197B2B2721F65D00980E7A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7197B2A2721F65D00980E7A /* DetailViewController.swift */; };
 		C76B4216271AA17C00E5FBDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B4215271AA17C00E5FBDB /* AppDelegate.swift */; };
 		C76B421A271AA17C00E5FBDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B4219271AA17C00E5FBDB /* ViewController.swift */; };
 		C76B421F271AA17D00E5FBDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76B421E271AA17D00E5FBDB /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		C7197B282721F39D00980E7A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Elephants/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		C7197B2A2721F65D00980E7A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C76B4212271AA17C00E5FBDB /* Elephants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elephants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76B4215271AA17C00E5FBDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76B4219271AA17C00E5FBDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			children = (
 				C76B4215271AA17C00E5FBDB /* AppDelegate.swift */,
 				C76B4219271AA17C00E5FBDB /* ViewController.swift */,
+				C7197B2A2721F65D00980E7A /* DetailViewController.swift */,
 				C76B422B271AA3FA00E5FBDB /* Models */,
 				C76B421E271AA17D00E5FBDB /* Assets.xcassets */,
 				C76B4223271AA17D00E5FBDB /* Info.plist */,
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7197B2B2721F65D00980E7A /* DetailViewController.swift in Sources */,
 				C76B4236271AA82900E5FBDB /* HTTPMethods.swift in Sources */,
 				C76B422F271AA72100E5FBDB /* Elephant.swift in Sources */,
 				C76B422D271AA70A00E5FBDB /* Sex.swift in Sources */,
