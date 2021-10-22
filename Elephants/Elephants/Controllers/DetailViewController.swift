@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class DetailViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class DetailViewController: UIViewController {
        
         let tableView = UITableView(frame: self.view.bounds)
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
         return tableView
     }()
@@ -75,11 +77,13 @@ extension DetailViewController: UITableViewDataSource {
     }
     
     func setWikilink(elephant: Elephant) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: reuseIdentifier)
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: reuseIdentifier)
         guard let wikilink = elephant.wikilink else { return UITableViewCell() }
-        cell.textLabel?.text = "Wikilink: \(wikilink)"
-        cell.textLabel?.adjustsFontSizeToFitWidth = true
+        cell.textLabel?.text = "Wikilink:"
+        cell.detailTextLabel?.text = wikilink
+        cell.detailTextLabel?.adjustsFontSizeToFitWidth = true
         cell.accessoryType = .disclosureIndicator
+        cell.tag = 100
         return cell
     }
     
@@ -115,5 +119,21 @@ extension DetailViewController: UITableViewDataSource {
     
 }
 
+extension DetailViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let cell = tableView.cellForRow(at: indexPath) {
+            if cell.tag == 100 {
+                guard let wikilink = elephant.wikilink else { return }
+                guard let url = URL(string: wikilink) else { return  }
+                let safari = SFSafariViewController(url: url)
+                self.showDetailViewController(safari, sender: nil)
+            }
+        }
+        
+    }
+    
+}
 
 

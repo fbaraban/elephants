@@ -31,14 +31,18 @@ class ImageViewCell: UITableViewCell {
         guard let image = try? UIImage(data: data) else { return }
         self.uiiv_ImageView.image = image
         self.uiiv_ImageView.contentMode = .scaleToFill
+        self.uiiv_ImageView.layer.borderColor = UIColor.black.cgColor
+        self.uiiv_ImageView.layer.borderWidth = 1.0
+        self.uiiv_ImageView.layer.cornerRadius = 10.0
+        self.uiiv_ImageView.layer.masksToBounds = true
         self.uiiv_ImageView.snp.makeConstraints { make in
             
             make.top.equalTo(self).offset(10)
             make.bottom.equalTo(self).offset(-10)
             make.centerY.equalTo(self)
             make.centerX.equalTo(self)
-            make.width.equalTo(150)
-            make.height.equalTo(150)
+            make.width.equalTo(250)
+            make.height.equalTo(250)
         }
         
     }
