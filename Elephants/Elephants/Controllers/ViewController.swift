@@ -59,7 +59,7 @@ extension ViewController: UITableViewDataSource {
                     content.image = UIImage(data: data)
                     content.imageProperties.reservedLayoutSize = CGSize(width: 50.0, height: 50.0)
                     content.imageProperties.maximumSize = CGSize(width: 50.0, height: 50.0)
-                    //content.imageProperties.cornerRadius = (content.image?.size.height)! / 2
+                    content.imageProperties.cornerRadius = (content.image?.size.height)! / 2
                 }
             }
         }
